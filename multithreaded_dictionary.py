@@ -22,7 +22,8 @@ def parallel_run(a, b, file_path, return_dict):
 
 def parallelization(a, b, directory_of_files, max_threads, output_dir_path):
     """
-    This method takes one chromosome name as parameter and chunks that chromosome in max_threads.
+    This method generates a list of parameters to be distributed to functions in separate threads, and stores their
+    outputs in a common dictionary
     :param a: user defined parameter
     :param b: user defined parameter
     :param directory_of_files: a directory containing files that need to be parsed in parallel
